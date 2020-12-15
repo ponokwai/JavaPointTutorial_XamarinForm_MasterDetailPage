@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JavaPointTutorial_XamarinForm.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="User Name" HorizontalOptions="Start"></Label>
+            <Entry Placeholder="User Name" BackgroundColor="Beige" />
+            <Label Text="Password" HorizontalOptions="Start"></Label>
+            <Entry Placeholder="User Password" BackgroundColor="Beige" IsPassword="True" />
+            <Button x:Name="login_btn" Text="Login" BackgroundColor="Yellow" Clicked="login_btn_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

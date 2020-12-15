@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JavaPointTutorial_XamarinForm.MainPage" 
+                  MasterBehavior="Popover">
+    <MasterDetailPage.Master>
+        <ContentPage Padding="10" BackgroundColor="Blue" Title="Master Page">
+            <ContentPage.Content>
+                <StackLayout Margin="5,30,5,5">
+                    
+                    <Label Text="Master Page" FontSize="Large"></Label>
+                    <Button x:Name="b3" Text="Login" BackgroundColor="Yellow" Clicked="login_btn_clicked" Margin="30"></Button>
+                    <Button x:Name="b1" Text="Menu Item 1" BackgroundColor="Yellow" Clicked="button_clicked" Margin="10"></Button>
+                    <Button x:Name="b2" Text="Menu item 2" BackgroundColor="Yellow" Clicked="button_clicked1" Margin="10"></Button>
+                    
+                </StackLayout> 
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <ContentPage Padding="10" BackgroundColor="Yellow">
+            <ContentPage.Content>
+                <StackLayout Margin="5,30,5,5">
+                    <Label Text="Detail Page" FontSize="Large"></Label>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Detail>
+
+</MasterDetailPage>
